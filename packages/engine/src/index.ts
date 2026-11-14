@@ -6,10 +6,12 @@
  * statement never leaves the device (the privacy pitch) and every result is
  * reproducible in a unit test (the "not hardcoded" pitch).
  *
- * AGENT: the bodies below are STUBS so the web app compiles while the engine
- * is being built. Replace them; keep the signatures (they are the contract
- * with apps/web — see docs/SPEC.md).
+ * AGENT: keep these signatures stable (the contract with apps/web — see docs/SPEC.md).
+ * The work lives in csv → formats (parse) and normalize → recurring → findings → totals/needs
+ * (analyze), wired together in analyze.ts.
  */
+import { runAnalysis } from './analyze';
+import { parseBankCsv } from './formats';
 import type { Analysis, Catalog, ParseResult, Persona, Profile, Transaction } from './types';
 import merchants from '../data/merchants.json';
 import carriers from '../data/carriers.json';
@@ -19,23 +21,21 @@ import personasJson from '../fixtures/personas.json';
 
 export type * from './types';
 
+// DECISION(json-cast): JSON imports widen string literals (category: string), so the bundled data
+// cannot be checked against the union types by `as Catalog` directly. data.test.ts validates the
+// real shape at test time instead (ids, categories, urls, checkedOn).
 /** Bundled, sourced catalog. Tests inject their own small catalogs instead. */
-export const catalog = { merchants, carriers, plans, perks } as Catalog;
+export const catalog = { merchants, carriers, plans, perks } as unknown as Catalog;
 
 /** Sample statements for the no-login demo. CSV text is loaded by the web app via Vite `?raw`. */
 export const personas = personasJson as Persona[];
 
 /** Parse one bank CSV export. Never throws; see ParseResult.warnings. */
 export function parseStatement(csv: string, fileIndex = 0): ParseResult {
-  void csv;
-  void fileIndex;
-  return { format: 'generic', transactions: [], skippedRows: 0, warnings: ['engine not implemented yet'] };
+  return parseBankCsv(csv, fileIndex);
 }
 
 /** Full pipeline: normalize → recurring → findings → totals → needs. Pure and fast (call on every edit). */
 export function analyze(transactions: Transaction[], profile: Profile = {}, cat: Catalog = catalog): Analysis {
-  void transactions;
-  void profile;
-  void cat;
-  return { recurring: [], findings: [], totals: { annualLow: 0, annualHigh: 0, recurringAnnual: 0 }, needs: [] };
+  return runAnalysis(transactions, profile, cat);
 }

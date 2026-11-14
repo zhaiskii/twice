@@ -1,1 +1,179 @@
+/*
+ * Twice design tokens + base layer.
+ *
+ * Everything visual derives from the @theme block below: Tailwind v4 turns each
+ * token into utilities (bg-paper, text-ink, shadow-card, ease-out ...). Prefer a
+ * token to an arbitrary value; add a token before you add a second arbitrary one.
+ */
 @import "tailwindcss";
+/* DECISION(font): Inter self-hosted with the optical-size axis. Judges open the URL on
+   Windows as often as on Macs; system-ui there is Segoe UI, whose figures are not
+   tabular by default and whose display sizes look loose. Inter's opsz axis gives a
+   tight display cut at hero sizes and a legible text cut at 13px, from one file set. */
+@import "@fontsource-variable/inter/opsz.css";
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Raw bank descriptors are data, so they read as data: monospace, never the UI face. */
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Menlo, Consolas, monospace;
+
+  /* DECISION(palette): warm paper + near-black ink + ONE accent (ledger green).
+     Green means exactly one thing in this UI: money you keep. Primary buttons are ink,
+     not green, so the accent never competes with the numbers. Revisit only with the
+     founder; a second accent dilutes that meaning. AGENT: keep theme-color in index.html
+     equal to --color-paper. */
+  --color-paper: #f6f5f1;
+  --color-card: #ffffff;
+  --color-sunk: #efede7;
+  --color-ink: #141613;
+  --color-ink-2: #3f423c;
+  --color-muted: #6a6d66;
+  --color-faint: #9c9e97;
+  --color-line: #e5e3dc;
+  --color-line-2: #d4d1c7;
+  --color-accent: #0b7a4b;
+  --color-accent-strong: #075f3a;
+  --color-accent-bright: #3fbf86;
+  --color-accent-soft: #dff0e6;
+  --color-accent-tint: #eff7f2;
+  /* Status only (upload errors). Not an accent: never used for decoration. */
+  --color-danger: #b42318;
+  --color-danger-soft: #fcebe9;
+
+  /* DECISION(easing): strong custom curves; the CSS built-ins are too weak to read as
+     intentional. ease-out for enter/exit and press, ease-in-out for on-screen moves,
+     drawer = iOS sheet curve. Never ease-in on UI. */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  /* Layered shadows: a 1px ring does the edge, soft layers do the depth. Bigger
+     surfaces get deeper shadows so they read as physically thicker. */
+  --shadow-card: 0 0 0 1px rgb(20 22 19 / 0.07), 0 1px 2px rgb(20 22 19 / 0.05), 0 2px 6px -2px rgb(20 22 19 / 0.05);
+  --shadow-lift: 0 0 0 1px rgb(20 22 19 / 0.07), 0 2px 4px rgb(20 22 19 / 0.05), 0 12px 32px -8px rgb(20 22 19 / 0.16);
+  --shadow-sheet: 0 0 0 1px rgb(20 22 19 / 0.08), 0 24px 80px -12px rgb(20 22 19 / 0.35);
+  --shadow-button: inset 0 1px 0 rgb(255 255 255 / 0.14), 0 1px 2px rgb(20 22 19 / 0.25), 0 0 0 1px rgb(20 22 19 / 0.9);
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+    /* Reserve the scrollbar so locking scroll for a dialog doesn't shift the page. */
+    scrollbar-gutter: stable;
+  }
+  body {
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--color-accent-soft);
+    color: var(--color-ink);
+  }
+  button,
+  [role="button"],
+  summary {
+    cursor: pointer;
+    touch-action: manipulation;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  a {
+    touch-action: manipulation;
+  }
+  /* DECISION(focus): one visible focus ring everywhere, keyboard only (:focus-visible),
+     in the accent so it reads as "you are here" without looking like an error. */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  /* iOS zooms into inputs under 16px and never zooms back. Fix the cause, not the zoom. */
+  @media (pointer: coarse) {
+    input,
+    select,
+    textarea {
+      font-size: 16px !important;
+    }
+  }
+  /* Native <dialog> is the modal primitive (see components/Dialog.tsx). Lock the page
+     behind it with CSS instead of a JS scroll-lock. */
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+  dialog::backdrop {
+    background: transparent;
+  }
+}
+
+@layer components {
+  /* DECISION(press): every pressable thing scales to 0.97 on :active — feedback on
+     pointer-down, not on release. 160ms ease-out. Hover colors live in Tailwind's
+     hover: variant, which v4 already gates behind (hover: hover). */
+  .press {
+    transition:
+      transform 160ms var(--ease-out),
+      background-color 150ms ease,
+      color 150ms ease,
+      box-shadow 150ms ease,
+      opacity 150ms ease;
+  }
+  .press:active:not(:disabled) {
+    transform: scale(0.97);
+  }
+  .press-sm:active:not(:disabled) {
+    transform: scale(0.94);
+  }
+
+  /* Small uppercase label above a heading or group. */
+  .eyebrow {
+    font-size: 12px;
+    font-weight: 550;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+
+  /* Headline type: tracking tightens as size grows (optical, not one fixed value). */
+  .display {
+    font-weight: 620;
+    letter-spacing: -0.038em;
+    line-height: 0.98;
+  }
+  .heading {
+    font-weight: 600;
+    letter-spacing: -0.022em;
+    line-height: 1.15;
+  }
+
+  /* Paper grain behind the hero: a hairline ledger grid that fades out radially. */
+  .ledger-grid {
+    background-image:
+      linear-gradient(to right, rgb(20 22 19 / 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(20 22 19 / 0.045) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: radial-gradient(ellipse 70% 60% at 60% 40%, black 20%, transparent 75%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* Reduced motion = gentler, not zero: keep color/opacity feedback, drop movement. */
+  .press:active:not(:disabled),
+  .press-sm:active:not(:disabled) {
+    transform: none;
+  }
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

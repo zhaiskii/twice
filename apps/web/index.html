@@ -2,8 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twice — stop paying twice</title>
+    <!-- DECISION(viewport): viewport-fit=cover so sheets can pad into the iPhone home-indicator
+         area with env(safe-area-inset-bottom). Never add maximum-scale / user-scalable=no. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <!-- AGENT: keep theme-color equal to --color-paper in src/index.css. -->
+    <meta name="theme-color" content="#f6f5f1" />
+    <meta name="color-scheme" content="light" />
+    <meta
+      name="description"
+      content="Drop in a bank or card CSV and see what you pay for twice. No bank login. Your file never leaves the browser."
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>Twice — see what you pay for twice</title>
   </head>
   <body>
     <div id="root"></div>

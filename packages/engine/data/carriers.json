@@ -1,1 +1,197 @@
-[]
+[
+  {
+    "id": "verizon",
+    "name": "Verizon",
+    "network": "verizon",
+    "isBigThree": true,
+    "portOut": [
+      {
+        "title": "Turn off Number Lock",
+        "body": "If Number Lock is on, the port is blocked. In My Verizon go to Security > Number Lock and switch the line to Off (or dial *611), then confirm the security code Verizon texts you."
+      },
+      {
+        "title": "Generate your Number Transfer PIN",
+        "body": "Only the Account Owner or an Account Manager can do this. Dial #PORT from the phone that has the number and open the text link, or sign in to My Verizon (app or website) and pick Number Transfer PIN > Generate PIN. One PIN works for every line on the account. Generate it right before you order the new SIM or eSIM: it expires after 7 days."
+      },
+      {
+        "title": "Find your account number",
+        "body": "Your new carrier asks for your Verizon account number, the PIN and the billing ZIP code. The account number is in My Verizon and on your bill; it is not your phone number or your 4-digit account PIN. Share these only with your new carrier. Verizon never asks you for them."
+      },
+      {
+        "title": "Do not cancel Verizon yourself",
+        "body": "Let the new carrier pull the number over. If you disconnect the line first, you have to reactivate it before the port can finish. Verizon closes the account automatically once the last number has moved."
+      }
+    ],
+    "warnings": [
+      "Phones bought from Verizon on or after Jan 27, 2026 stay locked until the device is paid off in full (paying with a chip card, contactless wallet or cash unlocks it right away; a Verizon gift card or bill credit adds a 35-day wait). Phones bought before that date unlock automatically 60 days after purchase.",
+      "If you disconnect a line that still has a device payment plan, the remaining balance is charged in full on your next bill and any promotional bill credits stop. Check Device Overview in My Verizon first.",
+      "Cancellation takes effect on the last day of your billing period, so you pay for that full period even if the port finishes early."
+    ],
+    "url": "https://www.verizon.com/support/port-out-faqs/",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "att",
+    "name": "AT&T",
+    "network": "att",
+    "isBigThree": true,
+    "portOut": [
+      {
+        "title": "Turn off Wireless Account Lock",
+        "body": "If Wireless Account Lock is on, AT&T will not release your number. Turn it off in your myAT&T account before you ask for the PIN."
+      },
+      {
+        "title": "Request your Number Transfer PIN",
+        "body": "Dial *PORT from the AT&T phone (you need your account passcode) and AT&T texts you the PIN, or sign in to myAT&T as the primary user, open Settings > Transfer phone number > Request new PIN. The same PIN covers every number on the account. It expires 4 days after you request it, so ask for it right before you order the new SIM or eSIM."
+      },
+      {
+        "title": "Collect your account number and billing ZIP",
+        "body": "Your new carrier also needs your AT&T wireless account number (on your bill and in your online account profile), your billing ZIP and the account holder name exactly as AT&T has it. Your phone number is not the account number."
+      },
+      {
+        "title": "Do not cancel AT&T yourself",
+        "body": "If you disconnect the number before the new carrier asks AT&T to transfer it, you have to reactivate it before the port can complete. AT&T closes the line when the port finishes."
+      }
+    ],
+    "warnings": [
+      "AT&T only unlocks a phone that was bought more than 60 days ago, is paid in full and is on an account that is not past due, so a phone still on installments stays locked to AT&T.",
+      "If you cancel wireless service, the unpaid balance on any installment plan is due immediately on your final bill; promotional bill credits on that device stop.",
+      "Plans without an installment agreement can carry an early termination fee if you leave before the end of the service commitment."
+    ],
+    "url": "https://www.att.com/support/article/wireless/KM1447526/",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "tmobile",
+    "name": "T-Mobile",
+    "network": "tmobile",
+    "isBigThree": true,
+    "portOut": [
+      {
+        "title": "Turn off Port Out Protection",
+        "body": "If Port Out Protection is on for the line, the port is blocked. Only the Primary Account Holder can turn it off: in T-Life go to Account > See plans > Manage add-ons and untick Port Out Protection."
+      },
+      {
+        "title": "Create a Temporary Port Out PIN in T-Life",
+        "body": "As the Primary Account Holder, open the T-Life app on the phone that has the number, with Wi-Fi off and any VPN or iCloud Private Relay off so you are on T-Mobile's network. Go to Account > gear icon > Permissions & controls > Transfer PIN > Create PIN. T-Mobile's page does not state how long the PIN lasts, so create it right before you order the new SIM or eSIM and make a new one if the port is rejected."
+      },
+      {
+        "title": "Find your account number and account PIN",
+        "body": "Your new carrier needs your T-Mobile account number (in your account and on your bill), the Temporary Port Out PIN, and possibly your account PIN or passcode. Your phone number is not the account number."
+      },
+      {
+        "title": "Do not cancel T-Mobile yourself",
+        "body": "Your account has to stay active until the new carrier has moved the number. T-Mobile keeps billing through the end of the billing cycle after a port, so time the switch near the end of the cycle."
+      }
+    ],
+    "warnings": [
+      "T-Mobile unlocks a postpaid phone only after it has been active on the line for at least 40 days and, if financed, is paid in full.",
+      "If you cancel the whole account, any remaining Equipment Installment Plan balance becomes due on your final bill.",
+      "Only the Primary Account Holder can create the PIN; other users on the account have to ask them."
+    ],
+    "url": "https://www.t-mobile.com/support/account/transfer-your-phone-number",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "visible",
+    "name": "Visible",
+    "network": "verizon",
+    "isBigThree": false,
+    "portOut": [
+      {
+        "title": "Get a port-out PIN from Visible",
+        "body": "Sign in to your Visible account (app or website) and look for the line's Port-Out PIN. Turn off Line Lock first if you enabled it, then give your new carrier the PIN and your Visible account number. Keep the Visible line active until the number has moved."
+      }
+    ],
+    "warnings": [
+      "Visible runs on Verizon's network and is Verizon-owned, so Twice does not suggest leaving it for another brand on the same network."
+    ],
+    "url": "https://www.visible.com/plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "mint",
+    "name": "Mint Mobile",
+    "network": "tmobile",
+    "isBigThree": false,
+    "portOut": [
+      {
+        "title": "Ask Mint for your transfer details",
+        "body": "Contact Mint Customer Care at (800) 683-7392 for your account number and transfer PIN, then give them to your new carrier. Keep the Mint line active until the number has moved."
+      }
+    ],
+    "warnings": [
+      "Mint runs on T-Mobile's network. Twice does not suggest leaving a low-cost brand for another brand on the same network."
+    ],
+    "url": "https://www.mintmobile.com/unlimited-data-phone-plans/",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "cricket",
+    "name": "Cricket Wireless",
+    "network": "att",
+    "isBigThree": false,
+    "portOut": [
+      {
+        "title": "Ask Cricket for your transfer PIN",
+        "body": "Request a transfer PIN and your account number from Cricket (myCricket app, chat or customer care), give them to your new carrier, and keep the Cricket line active until the number has moved."
+      }
+    ],
+    "warnings": [
+      "Cricket is AT&T's prepaid brand and runs on AT&T's network. Twice does not suggest leaving a prepaid brand for another brand on the same network."
+    ],
+    "url": "https://www.cricketwireless.com/cell-phone-plans/all-plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "metro",
+    "name": "Metro by T-Mobile",
+    "network": "tmobile",
+    "isBigThree": false,
+    "portOut": [
+      {
+        "title": "Request a transfer PIN from Metro",
+        "body": "Ask Metro for a transfer PIN in the myMetro app or from customer care, turn off Port Out Protection if it is on, and give the PIN and your Metro account number to your new carrier. Keep the Metro line active until the number has moved."
+      }
+    ],
+    "warnings": [
+      "Metro is T-Mobile's prepaid brand and runs on T-Mobile's network. Twice does not suggest leaving a prepaid brand for another brand on the same network."
+    ],
+    "url": "https://www.metrobyt-mobile.com/phone-plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "us_mobile",
+    "name": "US Mobile",
+    "network": "verizon",
+    "isBigThree": false,
+    "portOut": [
+      {
+        "title": "Ask US Mobile for your transfer details",
+        "body": "Contact US Mobile support for your account number and transfer PIN, give them to your new carrier, and keep the US Mobile line active until the number has moved."
+      }
+    ],
+    "warnings": [
+      "US Mobile lets you pick Verizon (Warp), AT&T (Dark Star) or T-Mobile (Light Speed) per line; the network field lists Warp (Verizon) as the default. Twice does not suggest leaving it."
+    ],
+    "url": "https://www.usmobile.com/plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "tello",
+    "name": "Tello",
+    "network": "tmobile",
+    "isBigThree": false,
+    "portOut": [
+      {
+        "title": "Ask Tello for your transfer details",
+        "body": "Contact Tello support (611 from your Tello phone) for your account number and transfer PIN, give them to your new carrier, and keep the Tello line active until the number has moved."
+      }
+    ],
+    "warnings": [
+      "Tello runs on T-Mobile's network. Twice does not suggest leaving a low-cost brand for another brand on the same network."
+    ],
+    "url": "https://tello.com/buy/custom_plans?plan=unlimited-unlimited",
+    "checkedOn": "2026-11-14"
+  }
+]

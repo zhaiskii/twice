@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "id": "maya",
+    "name": "Maya, Austin renter",
+    "blurb": "Verizon for two lines (~$165/mo), Walmart+ and Peacock, DashPass, Spotify and Apple Music.",
+    "file": "maya_chase_card.csv",
+    "format": "chase_card",
+    "profile": { "perkProviders": ["chase_sapphire_preferred"], "phoneLines": 2 }
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan & Sam, couple",
+    "blurb": "T-Mobile for three lines, Netflix, iCloud+, Google One, Uber One and DashPass.",
+    "file": "jordan_amex.csv",
+    "format": "amex",
+    "profile": { "perkProviders": ["tmobile_experience_more"], "phoneLines": 3 }
+  },
+  {
+    "id": "priya",
+    "name": "Priya, already lean",
+    "blurb": "Mint Mobile, one music app, one streaming service. Little to find, and we say so.",
+    "file": "priya_bofa_checking.csv",
+    "format": "bofa_checking",
+    "profile": {}
+  }
+]

@@ -1,1 +1,368 @@
-[]
+[
+  {
+    "id": "tmobile_experience_more__netflix",
+    "provider": {
+      "id": "tmobile_experience_more",
+      "name": "T-Mobile Experience More",
+      "kind": "phone_plan"
+    },
+    "includesMerchantId": "netflix",
+    "includedTier": "Netflix Standard with ads",
+    "includedTierMonthly": 8.99,
+    "detection": "quiz",
+    "carrierId": "tmobile",
+    "conditions": "Included at no extra cost on Experience More and Experience Beyond (also Go5G Next, Go5G Plus, Magenta MAX, or 2+ lines on Go5G or Magenta). Activation required. Netflix list price: $8.99/mo (help.netflix.com/en/node/24926).",
+    "kit": [
+      {
+        "title": "Add Netflix to your T-Mobile plan",
+        "body": "Log in to your T-Mobile account (T-Life app or t-mobile.com), open Benefits & subscriptions and add the Netflix benefit."
+      },
+      {
+        "title": "Link it to your Netflix account",
+        "body": "Follow the activation steps with Netflix. If you already have a Netflix account, sign in with it: your settings, viewing history and profiles are kept."
+      },
+      {
+        "title": "Wait until it shows active",
+        "body": "Confirm Netflix now shows T-Mobile as your billing partner and that you can watch. Keep your old billing running for one billing cycle until you have seen that."
+      },
+      {
+        "title": "Then cancel the direct subscription",
+        "body": "If Netflix still bills your card separately, cancel that billing in your Netflix account settings. The included tier is Standard with ads; keeping Standard or Premium means paying the upgrade through T-Mobile. Twice does not cancel anything for you."
+      }
+    ],
+    "url": "https://www.t-mobile.com/tv-streaming/netflix-on-us",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "tmobile_experience_beyond__netflix",
+    "provider": {
+      "id": "tmobile_experience_beyond",
+      "name": "T-Mobile Experience Beyond",
+      "kind": "phone_plan"
+    },
+    "includesMerchantId": "netflix",
+    "includedTier": "Netflix Standard with ads",
+    "includedTierMonthly": 8.99,
+    "detection": "quiz",
+    "carrierId": "tmobile",
+    "conditions": "Included at no extra cost on Experience More and Experience Beyond (also Go5G Next, Go5G Plus, Magenta MAX, or 2+ lines on Go5G or Magenta). Activation required. Netflix list price: $8.99/mo (help.netflix.com/en/node/24926).",
+    "kit": [
+      {
+        "title": "Add Netflix to your T-Mobile plan",
+        "body": "Log in to your T-Mobile account (T-Life app or t-mobile.com), open Benefits & subscriptions and add the Netflix benefit."
+      },
+      {
+        "title": "Link it to your Netflix account",
+        "body": "Follow the activation steps with Netflix. If you already have a Netflix account, sign in with it: your settings, viewing history and profiles are kept."
+      },
+      {
+        "title": "Wait until it shows active",
+        "body": "Confirm Netflix now shows T-Mobile as your billing partner and that you can watch. Keep your old billing running for one billing cycle until you have seen that."
+      },
+      {
+        "title": "Then cancel the direct subscription",
+        "body": "If Netflix still bills your card separately, cancel that billing in your Netflix account settings. The included tier is Standard with ads; keeping Standard or Premium means paying the upgrade through T-Mobile. Twice does not cancel anything for you."
+      }
+    ],
+    "url": "https://www.t-mobile.com/tv-streaming/netflix-on-us",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "tmobile_experience_beyond__hulu",
+    "provider": {
+      "id": "tmobile_experience_beyond",
+      "name": "T-Mobile Experience Beyond",
+      "kind": "phone_plan"
+    },
+    "includesMerchantId": "hulu",
+    "includedTier": "Hulu (With Ads)",
+    "includedTierMonthly": 12.49,
+    "detection": "quiz",
+    "carrierId": "tmobile",
+    "conditions": "Experience Beyond only (not Experience More), while you keep a qualifying Experience Beyond line in good standing. Hulu list price: $12.49/mo (hulu.com/annual-offer).",
+    "kit": [
+      {
+        "title": "Add Hulu to your T-Mobile plan",
+        "body": "In the T-Life app go to Manage (Account) > See plans > Manage add-ons, pick the Hulu streaming benefit and continue."
+      },
+      {
+        "title": "Link it to your Hulu account",
+        "body": "Follow the prompts to link an existing Hulu account or create a new one tied to your T-Mobile account."
+      },
+      {
+        "title": "Wait until it shows active",
+        "body": "Confirm Hulu plays and shows T-Mobile as the billing partner. Keep your old billing running for one billing cycle until you have seen that."
+      },
+      {
+        "title": "Then cancel the direct subscription",
+        "body": "Cancel any separate Hulu billing in your Hulu account settings. If you pay for Hulu (No Ads), the included tier is the ad-supported one. Twice does not cancel anything for you."
+      }
+    ],
+    "url": "https://www.t-mobile.com/tv-streaming",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "chase_sapphire_preferred__dashpass",
+    "provider": {
+      "id": "chase_sapphire_preferred",
+      "name": "Chase Sapphire Preferred",
+      "kind": "card"
+    },
+    "includesMerchantId": "dashpass",
+    "includedTier": "DashPass (complimentary for 12 months or through Dec 31, 2029, whichever is longer)",
+    "includedTierMonthly": 9.99,
+    "detection": "quiz",
+    "conditions": "Primary cardmember or authorized user activates on DoorDash or Caviar by Dec 31, 2029 with the card added as payment method; account must be open and not in default. Also gives a $10 monthly promo on one non-restaurant order. DashPass list price: $9.99/mo (help.doordash.com).",
+    "kit": [
+      {
+        "title": "Activate DashPass with your Chase Sapphire Preferred",
+        "body": "On DoorDash or Caviar, add your Chase Sapphire Preferred as a payment method, then tap the DashPass activation button. Use the same login on DoorDash and Caviar. Activation must happen by Dec 31, 2029."
+      },
+      {
+        "title": "Pay with that card at checkout",
+        "body": "The benefits only apply when the card you activated with is the payment method at checkout (not Apple Pay or other wallets, not a third-party payment account)."
+      },
+      {
+        "title": "Wait until DashPass shows active",
+        "body": "Check Manage DashPass in the DoorDash app and confirm the Chase membership is active and the next paid renewal is gone. Keep your direct DashPass for one billing cycle until you have seen that."
+      },
+      {
+        "title": "Then cancel the direct DashPass",
+        "body": "Cancel the paid DashPass in your DoorDash account settings so you are not billed twice. Twice does not cancel anything for you."
+      }
+    ],
+    "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "chase_sapphire_reserve__dashpass",
+    "provider": {
+      "id": "chase_sapphire_reserve",
+      "name": "Chase Sapphire Reserve",
+      "kind": "card"
+    },
+    "includesMerchantId": "dashpass",
+    "includedTier": "DashPass (complimentary for 12 months or through Dec 31, 2029, whichever is longer)",
+    "includedTierMonthly": 9.99,
+    "detection": "quiz",
+    "conditions": "Primary cardmember or authorized user activates on DoorDash or Caviar by Dec 31, 2029 with the card added as payment method; account must be open and not in default. Also gives a $15 monthly promo plus two $10 non-restaurant promos. DashPass list price: $9.99/mo (help.doordash.com).",
+    "kit": [
+      {
+        "title": "Activate DashPass with your Chase Sapphire Reserve",
+        "body": "On DoorDash or Caviar, add your Chase Sapphire Reserve as a payment method, then tap the DashPass activation button. Use the same login on DoorDash and Caviar. Activation must happen by Dec 31, 2029."
+      },
+      {
+        "title": "Pay with that card at checkout",
+        "body": "The benefits only apply when the card you activated with is the payment method at checkout (not Apple Pay or other wallets, not a third-party payment account)."
+      },
+      {
+        "title": "Wait until DashPass shows active",
+        "body": "Check Manage DashPass in the DoorDash app and confirm the Chase membership is active and the next paid renewal is gone. Keep your direct DashPass for one billing cycle until you have seen that."
+      },
+      {
+        "title": "Then cancel the direct DashPass",
+        "body": "Cancel the paid DashPass in your DoorDash account settings so you are not billed twice. Twice does not cancel anything for you."
+      }
+    ],
+    "url": "https://www.chase.com/digital/resources/terms-of-use/csr-doordash",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "chase_sapphire_preferred__apple_tv",
+    "provider": {
+      "id": "chase_sapphire_preferred",
+      "name": "Chase Sapphire Preferred",
+      "kind": "card"
+    },
+    "includesMerchantId": "apple_tv",
+    "includedTier": "Apple TV (complimentary for at least 12 months from activation)",
+    "includedTierMonthly": 14.99,
+    "detection": "quiz",
+    "conditions": "One-time activation on chase.com or the Chase Mobile app by Dec 31, 2026, by the primary cardmember. One complimentary subscription per Apple Account; lost if you close the card or change to an ineligible card. Apple TV list price: $14.99/mo (tv.apple.com).",
+    "kit": [
+      {
+        "title": "Activate Apple TV in the Chase app",
+        "body": "Sign in to chase.com or the Chase Mobile app as the primary cardmember, open your Chase Sapphire Preferred benefits and activate Apple TV by Dec 31, 2026. On an iPhone or iPad it links to the Apple Account signed in on the device; to use a different Apple Account, activate on the web."
+      },
+      {
+        "title": "Check it replaced your paid plan",
+        "body": "If you pay Apple directly for Apple TV, the Chase subscription suspends that paid plan automatically. Look in your Apple Account subscriptions and confirm it shows the complimentary plan."
+      },
+      {
+        "title": "Wait until it shows active",
+        "body": "Confirm Apple TV plays and that Apple stopped billing you. Keep an eye on one billing cycle."
+      },
+      {
+        "title": "Decide what happens after the free period",
+        "body": "Your paid subscription resumes at the then-current price when the complimentary period ends. Set a calendar reminder for month 11 and cancel in your Apple Account subscriptions if you do not want it back. Twice does not cancel anything for you."
+      }
+    ],
+    "url": "https://creditcards.chase.com/rewards-credit-cards/sapphire/preferred",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "chase_sapphire_reserve__apple_tv",
+    "provider": {
+      "id": "chase_sapphire_reserve",
+      "name": "Chase Sapphire Reserve",
+      "kind": "card"
+    },
+    "includesMerchantId": "apple_tv",
+    "includedTier": "Apple TV (complimentary through June 22, 2027)",
+    "includedTierMonthly": 14.99,
+    "detection": "quiz",
+    "conditions": "Link your Apple Account in the Card Benefits section of the Chase Mobile app and activate; an existing subscription is automatically suspended. Complimentary through June 22, 2027. Apple TV list price: $14.99/mo (tv.apple.com).",
+    "kit": [
+      {
+        "title": "Activate Apple TV in the Chase app",
+        "body": "Sign in to chase.com or the Chase Mobile app as the primary cardmember, open your Chase Sapphire Reserve benefits and activate Apple TV by June 22, 2027. On an iPhone or iPad it links to the Apple Account signed in on the device; to use a different Apple Account, activate on the web."
+      },
+      {
+        "title": "Check it replaced your paid plan",
+        "body": "If you pay Apple directly for Apple TV, the Chase subscription suspends that paid plan automatically. Look in your Apple Account subscriptions and confirm it shows the complimentary plan."
+      },
+      {
+        "title": "Wait until it shows active",
+        "body": "Confirm Apple TV plays and that Apple stopped billing you. Keep an eye on one billing cycle."
+      },
+      {
+        "title": "Decide what happens after the free period",
+        "body": "Your paid subscription resumes at the then-current price when the complimentary period ends. Set a calendar reminder for month 11 and cancel in your Apple Account subscriptions if you do not want it back. Twice does not cancel anything for you."
+      }
+    ],
+    "url": "https://www.chase.com/sapphire-cards/personal/reserve",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "walmart_plus__paramount_plus",
+    "provider": {
+      "id": "walmart_plus",
+      "name": "Walmart+",
+      "kind": "membership"
+    },
+    "includesMerchantId": "paramount_plus",
+    "includedTier": "Paramount+ Essential (with ads)",
+    "includedTierMonthly": 8.99,
+    "detection": "statement",
+    "providerMerchantId": "walmart_plus",
+    "conditions": "Choose Paramount+ Essential OR Peacock Premium with ads, one at a time; you can switch every 90 days. Needs an active Walmart+ membership (trial members can use it). An existing paid Paramount+ subscription must be cancelled and fully expired before you activate. Paramount+ Essential list price: $8.99/mo (paramountplus.com).",
+    "kit": [
+      {
+        "title": "Cancel your direct Paramount+ and let it expire",
+        "body": "Walmart+ will not activate while you still have a paid Paramount+ subscription. Cancel it in your Paramount+ account settings and note the date it ends. Do not activate before it has fully expired. Twice does not cancel anything for you."
+      },
+      {
+        "title": "Activate in your Walmart+ Benefits Hub",
+        "body": "Sign in to Walmart, open Account > Walmart+, find Paramount+ Essential in the Benefits Hub and select Get Paramount+."
+      },
+      {
+        "title": "Log in or create your Paramount+ account",
+        "body": "Follow the on-screen steps to connect your Paramount+ account and set up your profile."
+      },
+      {
+        "title": "Check it shows active",
+        "body": "Confirm Paramount+ plays and Paramount+ is no longer billing your card. You can switch to Peacock after 90 days."
+      }
+    ],
+    "url": "https://www.walmart.com/help/article/walmart-streaming-benefits/35624ec8e133496ab647a398a90cf779",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "walmart_plus__peacock",
+    "provider": {
+      "id": "walmart_plus",
+      "name": "Walmart+",
+      "kind": "membership"
+    },
+    "includesMerchantId": "peacock",
+    "includedTier": "Peacock Premium (with ads)",
+    "includedTierMonthly": 12.99,
+    "detection": "statement",
+    "providerMerchantId": "walmart_plus",
+    "conditions": "Choose Peacock Premium with ads OR Paramount+ Essential, one at a time; you can switch every 90 days. Needs an active Walmart+ membership (trial members can use it). An existing paid Peacock subscription must be cancelled and fully expired before you activate. Peacock Premium list price: $12.99/mo (peacocktv.com/plans).",
+    "kit": [
+      {
+        "title": "Cancel your direct Peacock and let it expire",
+        "body": "Walmart+ will not activate while you still have a paid Peacock subscription. Cancel it in your Peacock account settings and note the date it ends. Do not activate before it has fully expired. Twice does not cancel anything for you."
+      },
+      {
+        "title": "Activate in your Walmart+ Benefits Hub",
+        "body": "Sign in to Walmart, open Account > Walmart+, find Peacock Premium in the Benefits Hub and select Get Peacock."
+      },
+      {
+        "title": "Log in or create your Peacock account",
+        "body": "Follow the on-screen steps to connect your Peacock account and set up your profile."
+      },
+      {
+        "title": "Check it shows active",
+        "body": "Confirm Peacock plays and Peacock is no longer billing your card. You can switch to Paramount+ after 90 days."
+      }
+    ],
+    "url": "https://www.walmart.com/help/article/walmart-streaming-benefits/35624ec8e133496ab647a398a90cf779",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "instacart_plus__peacock",
+    "provider": {
+      "id": "instacart_plus",
+      "name": "Instacart+",
+      "kind": "membership"
+    },
+    "includesMerchantId": "peacock",
+    "includedTier": "Peacock Premium (with ads)",
+    "includedTierMonthly": 12.99,
+    "detection": "statement",
+    "providerMerchantId": "instacart_plus",
+    "conditions": "U.S. Instacart+ members only; the primary member activates (not an additional user on a family account). Peacock Premium only, not Premium Plus. If you already pay Peacock you must cancel and wait for the end of that billing cycle first. Lasts while you stay an Instacart+ member and the offer remains available. Peacock Premium list price: $12.99/mo (peacocktv.com/plans).",
+    "kit": [
+      {
+        "title": "Cancel your direct Peacock and let it expire",
+        "body": "Instacart+ will not activate while you still have a paid Peacock subscription. Cancel it in your Peacock account settings and note the date it ends. Do not activate before it has fully expired. Twice does not cancel anything for you."
+      },
+      {
+        "title": "Activate in your Instacart+ account",
+        "body": "In Instacart open Account > Your Instacart+ membership, go to Unlock special offers, select Activate under the Peacock offer and then Activate Peacock now."
+      },
+      {
+        "title": "Sign in or create your Peacock account",
+        "body": "Peacock opens in your browser; sign in or create an account (it does not have to use your Instacart email)."
+      },
+      {
+        "title": "Check it shows active",
+        "body": "Confirm Peacock plays and Peacock is no longer billing your card."
+      }
+    ],
+    "url": "https://www.instacart.com/p/peacock",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "metro_unlimited_premium__google_one",
+    "provider": {
+      "id": "metro_unlimited_premium",
+      "name": "Metro by T-Mobile Unlimited Premium",
+      "kind": "phone_plan"
+    },
+    "includesMerchantId": "google_one",
+    "includedTier": "Google One 100 GB",
+    "includedTierMonthly": 1.99,
+    "detection": "quiz",
+    "carrierId": "metro",
+    "conditions": "Included on qualifying Metro Unlimited plans (listed on the Unlimited Premium plan on Metro's plans page); an Android phone is required to activate. If you already have Google One you must cancel it and let it end first. Google One 100 GB list price: $1.99/mo (one.google.com/about/plans).",
+    "kit": [
+      {
+        "title": "Cancel your direct Google One and let it expire",
+        "body": "Metro will not activate while you still have a paid Google One subscription. Cancel it in your Google One account settings and note the date it ends. Do not activate before it has fully expired. Twice does not cancel anything for you."
+      },
+      {
+        "title": "Activate in the Google One app",
+        "body": "On your Android phone install the Google One app from the Play Store, turn Wi-Fi off so Metro can verify you, and follow the prompts to activate the 100 GB membership with a new Google One account."
+      },
+      {
+        "title": "Turn on Backup and check it is active",
+        "body": "Turn on Backup in the app and confirm the membership shows 100 GB at no charge. If you cancel Metro service you keep the benefits for 7 days."
+      }
+    ],
+    "url": "https://www.metrobyt-mobile.com/benefits/google-one",
+    "checkedOn": "2026-11-14"
+  }
+]

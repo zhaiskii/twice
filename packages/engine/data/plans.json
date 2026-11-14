@@ -1,1 +1,133 @@
-[]
+[
+  {
+    "id": "visible_unlimited",
+    "brand": "Visible",
+    "name": "Visible",
+    "network": "verizon",
+    "monthlyPerLine": 25,
+    "taxesIncluded": true,
+    "promo": "New members: $19/mo for the first year with code HOLIDAYHACK (per visible.com).",
+    "highlights": ["Unlimited data on Verizon 5G and 4G LTE", "Unlimited hotspot (5 Mbps)", "Taxes and fees included"],
+    "url": "https://www.visible.com/plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "visible_plus",
+    "brand": "Visible",
+    "name": "Visible+",
+    "network": "verizon",
+    "monthlyPerLine": 35,
+    "taxesIncluded": true,
+    "promo": "New members: $29/mo for up to 3 years with code HOLIDAYHACK (per visible.com).",
+    "highlights": ["Premium data on Verizon 5G Ultra Wideband", "Hotspot at twice the Visible speed", "Taxes and fees included"],
+    "url": "https://www.visible.com/plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "us_mobile_starter_warp",
+    "brand": "US Mobile",
+    "name": "Unlimited Starter on Warp (Verizon)",
+    "network": "verizon",
+    "monthlyPerLine": 25,
+    "taxesIncluded": true,
+    "promo": "Porting in a number: $15/mo for the first 6 months with AutoPay, then $25/mo (US Mobile, Nov 2026).",
+    "highlights": ["Unlimited data, may slow after 70 GB a month", "Same $25 per line on every line", "Taxes and fees included"],
+    "url": "https://www.usmobile.com/blog/cell-phone-plans-november-2026/",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "mint_unlimited_12mo",
+    "brand": "Mint Mobile",
+    "name": "Unlimited, 12-month plan",
+    "network": "tmobile",
+    "monthlyPerLine": 30,
+    "taxesIncluded": false,
+    "promo": "Limited-time new-customer offer on Mint's plan page: $15/mo for your first term (3, 6 or 12 months). Regular price $30/mo on the 12-month term, paid up front as $360.",
+    "highlights": ["Unlimited data, may slow after 50 GB when busy", "Up to 20 GB hotspot", "Prepaid up front; taxes and fees extra"],
+    "url": "https://www.mintmobile.com/unlimited-data-phone-plans/",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "tello_unlimited",
+    "brand": "Tello",
+    "name": "Unlimited data + unlimited minutes",
+    "network": "tmobile",
+    "monthlyPerLine": 25,
+    "taxesIncluded": false,
+    "highlights": ["50 GB at full 5G speed, then throttled", "10 GB hotspot", "No contract; government taxes extra"],
+    "url": "https://tello.com/buy/custom_plans?plan=unlimited-unlimited",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "metro_unlimited_40",
+    "brand": "Metro by T-Mobile",
+    "name": "Unlimited $40 (no AutoPay needed)",
+    "network": "tmobile",
+    "monthlyPerLine": 40,
+    "monthlyTotalByLines": { "1": 40, "2": 65, "3": 90, "4": 100 },
+    "taxesIncluded": true,
+    "promo": "New customers bringing their own phone: 6 months for $120 up front ($20/mo).",
+    "highlights": ["Unlimited 5G data, may slow when busy", "5-year price guarantee", "Taxes and fees included"],
+    "url": "https://www.metrobyt-mobile.com/phone-plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "us_mobile_starter_light_speed",
+    "brand": "US Mobile",
+    "name": "Unlimited Starter on Light Speed (T-Mobile)",
+    "network": "tmobile",
+    "monthlyPerLine": 25,
+    "taxesIncluded": true,
+    "promo": "Porting in a number: $15/mo for the first 6 months with AutoPay, then $25/mo (US Mobile, Nov 2026).",
+    "highlights": ["Unlimited data, may slow after 70 GB a month", "Same $25 per line on every line", "Taxes and fees included"],
+    "url": "https://www.usmobile.com/blog/cell-phone-plans-november-2026/",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "cricket_select_unlimited",
+    "brand": "Cricket Wireless",
+    "name": "Select Unlimited",
+    "network": "att",
+    "monthlyPerLine": 35,
+    "monthlyTotalByLines": { "4": 100 },
+    "taxesIncluded": true,
+    "promo": "Bring your own phone, new single line: 12-month Unlimited at $25/mo when you prepay $300.",
+    "highlights": ["Unlimited data on AT&T 5G, may slow when busy", "Needs AutoPay; new lines only", "Video streams in SD"],
+    "url": "https://www.cricketwireless.com/cell-phone-plans/all-plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "cricket_smart_unlimited",
+    "brand": "Cricket Wireless",
+    "name": "Smart Unlimited",
+    "network": "att",
+    "monthlyPerLine": 45,
+    "taxesIncluded": true,
+    "highlights": ["Unlimited data on AT&T 5G, may slow when busy", "Needs AutoPay ($50 without)", "Video streams in SD"],
+    "url": "https://www.cricketwireless.com/cell-phone-plans/all-plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "cricket_supreme_unlimited",
+    "brand": "Cricket Wireless",
+    "name": "Supreme Unlimited",
+    "network": "att",
+    "monthlyPerLine": 55,
+    "taxesIncluded": true,
+    "highlights": ["50 GB hotspot", "HBO Max Basic with ads included", "150 GB cloud storage"],
+    "url": "https://www.cricketwireless.com/cell-phone-plans/all-plans",
+    "checkedOn": "2026-11-14"
+  },
+  {
+    "id": "us_mobile_starter_dark_star",
+    "brand": "US Mobile",
+    "name": "Unlimited Starter on Dark Star (AT&T)",
+    "network": "att",
+    "monthlyPerLine": 25,
+    "taxesIncluded": true,
+    "promo": "Porting in a number: $15/mo for the first 6 months with AutoPay, then $25/mo (US Mobile, Nov 2026).",
+    "highlights": ["Unlimited high-speed data on AT&T", "20 GB hotspot", "Taxes and fees included"],
+    "url": "https://www.usmobile.com/blog/cell-phone-plans-november-2026/",
+    "checkedOn": "2026-11-14"
+  }
+]

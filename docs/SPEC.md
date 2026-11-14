@@ -87,6 +87,23 @@ Each persona has ~150–250 rows incl. realistic noise (groceries, gas, rent,
 Amazon, restaurants, payroll deposits, card payments, refunds) using real-world
 descriptor styles. `personas.json` holds metadata + the profile the demo pre-fills.
 
+## Canonical ids (shared by data/*.json, fixtures and tests)
+
+AGENT: data/ and engine/ are written by different agents — use these exact ids.
+
+- **merchants** (`merchants.json` id): `netflix` `hulu` `disney_plus` `max`
+  `peacock` `paramount_plus` `apple_tv` `youtube_premium` `spotify`
+  `apple_music` `amazon_music` `icloud` `google_one` `dropbox` `dashpass`
+  `uber_one` `instacart_plus` `grubhub_plus` `walmart_plus` `amazon_prime`
+  `verizon` `att` `tmobile` `visible` `mint` `cricket` `metro` `us_mobile`
+  `tello` `planet_fitness` — add more if useful, never rename these.
+- **carriers** (`carriers.json` id, = `MerchantRow.carrierId`): `verizon` `att`
+  `tmobile` (isBigThree) and `visible` `mint` `cricket` `metro` `us_mobile` `tello`.
+- **perk providers** (`PerkRow.provider.id`): `chase_sapphire_preferred`
+  `chase_sapphire_reserve` `amex_platinum` `tmobile_experience_more`
+  `tmobile_experience_beyond` `walmart_plus` `instacart_plus` — plus any other
+  verified provider. Quiz perks for phone plans set `carrierId: "tmobile"`.
+
 ## Out of scope for v0 (roadmap slide)
 
 Plaid sync · Gmail receipts · PDF statements · live gym prices · insurance &

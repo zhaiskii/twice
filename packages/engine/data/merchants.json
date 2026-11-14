@@ -1,1 +1,325 @@
-[]
+[
+  {
+    "id": "netflix",
+    "name": "Netflix",
+    "category": "streaming_video",
+    "patterns": [
+      "\\bNETFLIX\\b"
+    ]
+  },
+  {
+    "id": "hulu",
+    "name": "Hulu",
+    "category": "streaming_video",
+    "patterns": [
+      "\\bHULU(?:PLUS)?\\b"
+    ]
+  },
+  {
+    "id": "disney_plus",
+    "name": "Disney+",
+    "category": "streaming_video",
+    "patterns": [
+      "\\bDISNEY ?(?:\\+|PLUS)",
+      "\\bDISNEYPLUS\\b"
+    ]
+  },
+  {
+    "id": "max",
+    "name": "Max",
+    "category": "streaming_video",
+    "patterns": [
+      "\\bHBO ?MAX\\b",
+      "\\bMAX\\.COM\\b",
+      "^MAX$"
+    ]
+  },
+  {
+    "id": "peacock",
+    "name": "Peacock",
+    "category": "streaming_video",
+    "patterns": [
+      "^PEACOCK(?:TV)?\\b"
+    ]
+  },
+  {
+    "id": "paramount_plus",
+    "name": "Paramount+",
+    "category": "streaming_video",
+    "patterns": [
+      "\\bPARAMOUNT ?(?:\\+|PLUS)",
+      "\\bPARAMOUNTPLUS\\b",
+      "^PARAMOUNT$"
+    ]
+  },
+  {
+    "id": "apple_tv",
+    "name": "Apple TV+",
+    "category": "streaming_video",
+    "patterns": [
+      "\\bAPPLE ?TV\\b",
+      "\\bAPPLE\\.COM\\/BILL .*\\bTV\\b"
+    ]
+  },
+  {
+    "id": "youtube_premium",
+    "name": "YouTube Premium",
+    "category": "streaming_video",
+    "patterns": [
+      "\\bYOUTUBE ?(?:PREMIUM|MUSIC)\\b"
+    ]
+  },
+  {
+    "id": "youtube_tv",
+    "name": "YouTube TV",
+    "category": "streaming_video",
+    "patterns": [
+      "\\bYOUTUBE ?TV\\b",
+      "\\bYOUTUBETV\\b"
+    ]
+  },
+  {
+    "id": "spotify",
+    "name": "Spotify",
+    "category": "music",
+    "patterns": [
+      "\\bSPOTIFY"
+    ]
+  },
+  {
+    "id": "apple_music",
+    "name": "Apple Music",
+    "category": "music",
+    "patterns": [
+      "\\bAPPLE ?MUSIC\\b",
+      "\\bAPPLE\\.COM\\/BILL .*\\bMUSIC\\b"
+    ]
+  },
+  {
+    "id": "amazon_music",
+    "name": "Amazon Music",
+    "category": "music",
+    "patterns": [
+      "\\b(?:AMAZON|AMZN) ?MUSIC\\b"
+    ]
+  },
+  {
+    "id": "icloud",
+    "name": "iCloud+",
+    "category": "cloud_storage",
+    "patterns": [
+      "\\bICLOUD\\b",
+      "\\bAPPLE\\.COM\\/BILL .*\\bICLOUD\\b"
+    ]
+  },
+  {
+    "id": "google_one",
+    "name": "Google One",
+    "category": "cloud_storage",
+    "patterns": [
+      "\\bGOOGLE ?ONE\\b",
+      "\\bGOOGLE STORAGE\\b"
+    ]
+  },
+  {
+    "id": "dropbox",
+    "name": "Dropbox",
+    "category": "cloud_storage",
+    "patterns": [
+      "\\bDROPBOX\\b"
+    ]
+  },
+  {
+    "id": "dashpass",
+    "name": "DashPass",
+    "category": "delivery",
+    "patterns": [
+      "\\bDASH ?PASS\\b"
+    ]
+  },
+  {
+    "id": "uber_one",
+    "name": "Uber One",
+    "category": "delivery",
+    "patterns": [
+      "\\bUBER ?ONE\\b",
+      "\\bUBERONE\\b"
+    ]
+  },
+  {
+    "id": "instacart_plus",
+    "name": "Instacart+",
+    "category": "delivery",
+    "patterns": [
+      "\\bINSTACART ?(?:\\+|PLUS|SUBSCRIPTION|MEMBERSHIP)"
+    ]
+  },
+  {
+    "id": "grubhub_plus",
+    "name": "Grubhub+",
+    "category": "delivery",
+    "patterns": [
+      "\\bGRUBHUB ?(?:\\+|PLUS|MEMBERSHIP)"
+    ]
+  },
+  {
+    "id": "walmart_plus",
+    "name": "Walmart+",
+    "category": "membership",
+    "patterns": [
+      "\\bWAL-?MART ?(?:\\+|PLUS|MEMBERSHIP)",
+      "\\bWMT PLUS\\b"
+    ]
+  },
+  {
+    "id": "amazon_prime",
+    "name": "Amazon Prime",
+    "category": "membership",
+    "patterns": [
+      "\\b(?:AMAZON|AMZN) PRIME(?! VIDEO)\\b",
+      "\\bPRIME MEMBERSHIP\\b"
+    ]
+  },
+  {
+    "id": "verizon",
+    "name": "Verizon",
+    "category": "wireless",
+    "patterns": [
+      "^(?!.*\\bVISB\\b)(?:VERIZON(?! (?:FIOS|HOME|INTERNET))|VZW\\b|VZWRLSS)"
+    ],
+    "carrierId": "verizon"
+  },
+  {
+    "id": "att",
+    "name": "AT&T",
+    "category": "wireless",
+    "patterns": [
+      "^(?:AT&T|ATT)\\b(?!.*\\b(?:INTERNET|U-?VERSE|FIBER|DIRECTV|DTV|TV)\\b)"
+    ],
+    "carrierId": "att"
+  },
+  {
+    "id": "tmobile",
+    "name": "T-Mobile",
+    "category": "wireless",
+    "patterns": [
+      "^(?:T-?MOBILE|T MOBILE|TMO)\\b(?!.*\\bHOME INTERNET\\b)"
+    ],
+    "carrierId": "tmobile"
+  },
+  {
+    "id": "visible",
+    "name": "Visible",
+    "category": "wireless",
+    "patterns": [
+      "\\bAPOCC VISB\\b",
+      "^VISIBLE\\b",
+      "\\bVISIBLE WIRELESS\\b"
+    ],
+    "carrierId": "visible"
+  },
+  {
+    "id": "mint",
+    "name": "Mint Mobile",
+    "category": "wireless",
+    "patterns": [
+      "\\bMINT ?MOBILE\\b"
+    ],
+    "carrierId": "mint"
+  },
+  {
+    "id": "cricket",
+    "name": "Cricket Wireless",
+    "category": "wireless",
+    "patterns": [
+      "^CRICKET\\b"
+    ],
+    "carrierId": "cricket"
+  },
+  {
+    "id": "metro",
+    "name": "Metro by T-Mobile",
+    "category": "wireless",
+    "patterns": [
+      "\\bMETRO ?BY ?T-?MOBILE\\b",
+      "\\bMETROPCS\\b",
+      "\\bMETRO PCS\\b"
+    ],
+    "carrierId": "metro"
+  },
+  {
+    "id": "us_mobile",
+    "name": "US Mobile",
+    "category": "wireless",
+    "patterns": [
+      "^US ?MOBILE\\b"
+    ],
+    "carrierId": "us_mobile"
+  },
+  {
+    "id": "tello",
+    "name": "Tello",
+    "category": "wireless",
+    "patterns": [
+      "^TELLO\\b"
+    ],
+    "carrierId": "tello"
+  },
+  {
+    "id": "planet_fitness",
+    "name": "Planet Fitness",
+    "category": "gym",
+    "patterns": [
+      "\\bPLANET ?FITNESS\\b"
+    ]
+  },
+  {
+    "id": "la_fitness",
+    "name": "LA Fitness",
+    "category": "gym",
+    "patterns": [
+      "\\bLA FITNESS\\b"
+    ]
+  },
+  {
+    "id": "anytime_fitness",
+    "name": "Anytime Fitness",
+    "category": "gym",
+    "patterns": [
+      "\\bANYTIME FITNESS\\b"
+    ]
+  },
+  {
+    "id": "nytimes",
+    "name": "The New York Times",
+    "category": "news",
+    "patterns": [
+      "\\bNYTIMES\\b|\\bNY TIMES\\b|\\bNEW YORK TIMES\\b"
+    ]
+  },
+  {
+    "id": "audible",
+    "name": "Audible",
+    "category": "other",
+    "patterns": [
+      "\\bAUDIBLE\\b"
+    ]
+  },
+  {
+    "id": "adobe",
+    "name": "Adobe",
+    "category": "software",
+    "patterns": [
+      "^ADOBE\\b"
+    ]
+  },
+  {
+    "id": "apple_services",
+    "name": "Apple (App Store, iCloud, Music, TV)",
+    "category": "other",
+    "patterns": [
+      "\\bAPPLE\\.COM\\/BILL\\b",
+      "\\bITUNES\\.COM\\/BILL\\b"
+    ]
+  }
+]
