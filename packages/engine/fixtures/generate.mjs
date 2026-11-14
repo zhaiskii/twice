@@ -83,7 +83,10 @@ function maya() {
   const r4 = () => String(w.int(1000, 9999));
   w.monthly(3, 'VERIZON WRLS*MY VZ VB P', (i) => (i >= 9 ? 175 : 165), 'Bills & Utilities');
   w.monthly(9, 'WALMART+ MEMBERSHIP 800-925-6278 AR', () => 12.95, 'Shopping');
-  w.monthly(12, 'PEACOCK PREMIUM', (i) => (i >= 8 ? 10.99 : 7.99), 'Entertainment');
+  // DECISION(peacock-step): $10.99 → $12.99 from Sep 2026 mirrors the real Premium hike in perks.json
+  // (effective Aug 18, 2026), so the price_step and the paying_twice list price agree on one card.
+  // AGENT: if the Peacock row in data/perks.json changes price, move this step with it.
+  w.monthly(12, 'PEACOCK PREMIUM', (i) => (i >= 10 ? 12.99 : 10.99), 'Entertainment');
   w.monthly(15, 'DOORDASH DASHPASS', () => 9.99, 'Food & Drink');
   w.monthly(18, (i) => (i % 3 === 0 ? `SPOTIFY P${w.pick(['3F9A1C', '7B2D4E', '9C1E5A'])}` : 'SPOTIFY USA'), () => 11.99, 'Entertainment');
   w.monthly(21, 'APPLE.COM/BILL APPLE MUSIC 866-712-7753 CA', () => 10.99, 'Entertainment');
